@@ -88,14 +88,6 @@ While the AETF provides a robust model for understanding trust and policy cooper
 2. **Longitudinal Effects**: Future research could explore how trust dynamics evolve over time and affect long-term policy cooperation.
 3. **Expanded Measurement of Cultural Theory**: Further refinement of measures for deep core beliefs and risk perceptions could enhance model accuracy.
 
-## How to Use This Repository
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/username/aetf-trust-analysis.git
-   cd aetf-trust-analysis
-
-
 ## License
 
 Proprietary License: This project is for reference only. All rights reserved. Usage, distribution, and modification are not permitted without explicit permission from the author.
