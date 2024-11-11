@@ -9,8 +9,6 @@ This repository contains the source code and data analysis supporting the resear
 - **EDA.R**: Code for the initial exploratory data analysis, including data cleaning, transformation, and outlier detection.
 - **Modeling.R**: Full implementation of the **Structural Equation Modeling** process to test the Actor Evaluation and Trust Framework (AETF).
 - **model_revisions.R**: Iterations and modifications to the SEM models based on fit indices and goodness-of-fit tests.
-- **Kilgore_Thesis_Presentation_SP24.pptx**: A PowerPoint presentation summarizing the research, methodology, results, and implications of the study.
-- **thesis_proof_read.pdf**: The full thesis document, which details the research questions, literature review, methodology, findings, and future directions.
 
 ## Key Research Questions
 
