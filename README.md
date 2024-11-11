@@ -1,60 +1,46 @@
-The Decision to Trust: An Analysis using the Actor Evaluation and Trust Framework (AETF)
-Overview
+# The Decision to Trust: Actor Evaluation and Trust Framework
 
-This repository supports "The Decision to Trust: An Application of Structural Equation Modeling to the Actor Evaluation and Trust Framework", a thesis project focused on analyzing public trust in risk management. Using nationally representative data collected during the COVID-19 pandemic, this project explores how foundational beliefs, cultural worldviews, and perceptions of competency influence trust judgments in public policy and health guidelines.
+## Overview
 
-The project proposes the Actor Evaluation and Trust Framework (AETF), a model that combines insights from Cultural Theory, public administration, and risk perception literature to predict trust and policy cooperation. This model is empirically tested using Structural Equation Modeling (SEM) across different types of risk managers, providing a nuanced understanding of trust formation.
-Repository Structure
+This repository contains the source code and data analysis supporting the research project **"The Decision to Trust"**, which explores the foundational elements of trust in risk management. Specifically, it focuses on the **Actor Evaluation and Trust Framework (AETF)**, a new model that incorporates elements of deep core beliefs, value congruence, competency perceptions, and risk perception to explain how individuals decide who to trust and whether to cooperate with public policy. This research utilizes **Structural Equation Modeling (SEM)** to validate the framework through data collected from a national survey during the COVID-19 pandemic.
 
-    EDA.R: Code for exploratory data analysis, including data cleaning and outlier detection.
-    Modeling.R: The main modeling script, implementing SEM to test hypotheses of the AETF.
-    model_revisions.R: Modifications and refinements to the AETF based on SEM fit indices and robustness checks.
-    Kilgore_Thesis_Presentation_SP24.pptx: Presentation of the thesis, including research background, model design, results, and implications.
+## Repository Contents
 
-Key Components of the AETF
-Research Questions
+- **EDA.R**: Code for the initial exploratory data analysis, including data cleaning, transformation, and outlier detection.
+- **Modeling.R**: Full implementation of the **Structural Equation Modeling** process to test the Actor Evaluation and Trust Framework (AETF).
+- **model_revisions.R**: Iterations and modifications to the SEM models based on fit indices and goodness-of-fit tests.
+- **Kilgore_Thesis_Presentation_SP24.pptx**: A PowerPoint presentation summarizing the research, methodology, results, and implications of the study.
+- **thesis_proof_read.pdf**: The full thesis document, which details the research questions, literature review, methodology, findings, and future directions.
 
-    How do deep-seated beliefs and cultural worldviews impact trust and cooperation with public policy?
-    What roles do value congruence and perceived competency play in shaping trust judgments?
-    How do trust and risk perception interact to drive policy cooperation during crises?
+## Key Research Questions
 
-Model Overview
+1. How do an individual’s foundational beliefs, such as cultural worldviews, influence their decision to trust and cooperate with public policy?
+2. What impact do value congruence and competency perceptions have on an individual’s trust in a risk manager?
+3. How do trust and risk perception influence cooperation with public policy during crises?
 
-The AETF integrates four main constructs:
+## Methodology
 
-    Deep Core Beliefs: Foundational beliefs, measured through Cultural Theory, that shape how individuals interpret risk and competence.
-    Value Congruence: Alignment between individuals' values and those of risk managers, shaping relational trust.
-    Competency Perceptions: Judgments on the ability of risk managers to handle crises, contributing to calculative trust.
-    Risk Perception: Individual views on the severity of risks, which moderate trust and willingness to cooperate with public policy.
+### Data Collection
+Data was collected through an internet-based survey, fielded from February 9th to March 3rd, 2021. The sample of 1,000 respondents was representative of the U.S. population. Key survey measures focused on demographic data, risk perceptions, value congruence, competency perceptions, trust in risk managers, and policy cooperation.
 
-Data Collection
+### Theoretical Framework
+The **Actor Evaluation and Trust Framework (AETF)** proposes that an individual’s decision to cooperate with or accept public policy is determined by their trust in the actor responsible for managing the hazard, their risk perception, and the perceived competency of the risk manager. The framework integrates theories from **Cultural Theory**, **Social Psychology**, and **Public Administration** to provide a multidimensional approach to understanding trust.
 
-A sample of 1,000 U.S. participants, surveyed through Qualtrics, forms the basis of this study. Questions cover COVID-19 risk perceptions, value congruence, competency, trust in different risk managers (CDC, state health departments, and primary care physicians), and cooperation intentions.
-Methodology
-Modeling Approach
+### Analytical Approach
+The analysis uses **Structural Equation Modeling (SEM)** to test the relationships between deep core beliefs, value congruence, competency perceptions, risk perception, and policy cooperation. Various fit indices, including **CFI**, **TLI**, **RMSEA**, and **SRMR**, were used to assess model fit.
 
-The AETF is tested through Structural Equation Modeling (SEM), examining three models focused on different risk managers. The SEM approach validates hypothesized relationships and tests the impact of cultural and belief-based constructs on trust. The model is assessed using fit indices like CFI, TLI, RMSEA, and SRMR to ensure robustness.
-Key Hypotheses
+## Results Summary
 
-The model tests several hypotheses, including:
+- **Deep Core Beliefs**: Cultural Theory's framework of worldviews (fatalism, hierarchism, individualism, and egalitarianism) is used to assess individuals' fundamental beliefs about risk and the role of risk managers.
+- **Value Congruence**: Higher alignment between the individual's values and those of the risk manager (CDC, State Health Departments, and Primary Care Physicians) leads to increased trust and cooperation.
+- **Risk Perception**: Perceptions of risk influence individuals’ willingness to cooperate with public policy, challenging traditional views that trust influences risk perception.
+- **Competency Perceptions**: An individual’s perception of the competence of risk managers (based on past performance) significantly impacts their decision to trust and cooperate with policies.
 
-    The influence of deep core beliefs on competency perception and value congruence.
-    The direct and indirect relationships between value congruence, competency, trust, and policy cooperation.
-    The role of risk perception as a mediator between trust and cooperation.
+## Next Steps
 
-Results Summary
+Future research will focus on refining the AETF and testing its application in other contexts beyond public health emergencies. There is also a need to explore the longitudinal impacts of trust on policy cooperation.
 
-    Core Findings: Relationships were observed between deep core beliefs, competency perceptions, value congruence, and trust.
-    Practical Implications: Insights are provided for policymakers on fostering trust and engagement with public policy during crises.
+## Dependencies
 
-Next Steps
-
-Future research will refine measures of value congruence and risk perception, assess different contexts, and explore longitudinal effects on policy cooperation.
-Dependencies
-
-    R (version 4.0 or later)
-    R Packages: lavaan, semTools, psych, dplyr, tidyverse
-
-Acknowledgments
-
-This project was conducted as part of a Master of Arts thesis at the University of Oklahoma, with support from the Department of Political Science and guidance from thesis advisors.
+- R (version 4.0 or later)
+- Libraries: `lavaan`, `semTools`, `psych`, `dplyr`, `tidyverse`, and others as specified in the R scripts.
